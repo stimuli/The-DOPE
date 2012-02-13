@@ -1,0 +1,125 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="trade_asset">
+  <column name="tra_id"
+          description="This ID uniquely identifies this trade/asset row."
+          type="INTEGER"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="tra_trd_key"
+          description="This key identifies the trade that this asset belongs to."
+          type="VARCHAR"
+          size="50"
+          required="true"/>
+  <column name="tra_ast_code"
+          description="This identifies the asset."
+          type="VARCHAR"
+          size="50"
+          required="true"/>
+  <column name="tra_cpt_key"
+          description="The counterparty identifier."
+          type="VARCHAR"
+          size="30"
+          required="true"/>
+  <column name="tra_inu_code"
+          description="The internal unit doing the deal"
+          type="VARCHAR"
+          size="4"
+          required="true"/>
+  <column name="tra_bys_code"
+          description="The direction this asset is flowing."
+          type="CHAR"
+          size="1"
+          required="true"/>
+  <column name="tra_amount"
+          description="The amount of the asset."
+          type="NUMERIC"
+          size="14,4"
+          required="true"/>
+  <column name="tra_unt_code"
+          description="The units for the amount."
+          type="VARCHAR"
+          size="2"
+          required="false"/>
+  <column name="tra_opt_code"
+          description="The option type code"
+          type="CHAR"
+          size="2"
+          required="false"/>
+  <column name="tra_price"
+          description="The price, strike or agreed rate"
+          type="NUMERIC"
+          size="14,8"
+          required="false"/>
+  <column name="tra_settlement_date"
+          description="The settlement date of the asset"
+          type="DATE"
+          required="false"/>
+  <column name="tra_expiry_date"
+          description="The expiry date of the asset"
+          type="DATE"
+          required="false"/>
+  <column name="tra_maturity_date"
+          description="The maturity date of the asset"
+          type="DATE"
+          required="false"/>
+
+  <foreign-key foreignTable="trade">
+    <reference local="tra_trd_key" foreign="trd_key"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="asset">
+    <reference local="tra_ast_code" foreign="ast_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="buysell_type">
+    <reference local="tra_bys_code" foreign="bys_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="unit">
+    <reference local="tra_unt_code" foreign="unt_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="option_type">
+    <reference local="tra_opt_code" foreign="opt_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="counterparty">
+    <reference local="tra_cpt_key" foreign="cpt_key"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="internal_unit">
+    <reference local="tra_inu_code" foreign="inu_code"/>
+  </foreign-key>
+
+  <index name="xtra_trd_key">
+    <index-column name="tra_trd_key"/>
+  </index>
+
+  <index name="xtra_ast_code">
+    <index-column name="tra_ast_code"/>
+  </index>
+
+  <index name="xtra_cpt_key">
+    <index-column name="tra_cpt_key"/>
+  </index>
+
+  <index name="xtra_inu_code">
+    <index-column name="tra_inu_code"/>
+  </index>
+
+</table>

@@ -1,0 +1,4 @@
+AP	Asia Pacific
+AM	America
+LA	Latin America
+EU	Europe

@@ -1,0 +1,8 @@
+<data table="date_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="dty_id"/>
+    <column offset="1" tableColumn="dty_is_holiday"/>
+    <column offset="2" tableColumn="dty_desc"/>
+  </columns>
+</data>
+

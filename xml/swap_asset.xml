@@ -1,0 +1,108 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="swap_asset">
+  <column name="swa_ast_code"
+          description="The unique asset code."
+          type="VARCHAR"
+          size="50"
+          primaryKey="true"
+          required="true"/>
+  <column name="swa_ccy_code"
+          description="The currency this asset is denominated in."
+          type="CHAR"
+          size="3"
+          required="true"/>
+  <column name="swa_dyc_code"
+          description="The day count code"
+          type="VARCHAR"
+          size="15"
+          required="true"/>
+  <column name="swa_dtr_code"
+          description="The date roll code."
+          type="CHAR"
+          size="2"
+          required="true"/>
+  <column name="swa_spot_term_days"
+          description="The number of days in the spot term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_spot_term_weeks"
+          description="The number of weeks in the spot term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_spot_term_months"
+          description="The number of months in the spot term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_spot_term_years"
+          description="The number of years in the spot term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_maturity_term_days"
+          description="The number of days in the maturity term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_maturity_term_weeks"
+          description="The number of weeks in the maturity term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_maturity_term_months"
+          description="The number of months in the maturity term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_maturity_term_years"
+          description="The number of years in the maturity term"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_frequency_term_days"
+          description="The number of days in the frequency"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_frequency_term_weeks"
+          description="The number of weeks in the frequency"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_frequency_term_months"
+          description="The number of months in the frequency"
+          type="INTEGER"
+          required="false"/>
+  <column name="swa_frequency_term_years"
+          description="The number of years in the frequency"
+          type="INTEGER"
+          required="false"/>
+
+
+  <foreign-key foreignTable="asset">
+    <reference local="swa_ast_code" foreign="ast_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="currency">
+    <reference local="swa_ccy_code" foreign="ccy_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="day_count_type">
+    <reference local="swa_dyc_code" foreign="dyc_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="date_roll_type">
+    <reference local="swa_dtr_code" foreign="dtr_code"/>
+  </foreign-key>
+
+  <index name="xswa_ccy_code">
+    <index-column name="swa_ccy_code"/>
+  </index>
+
+</table>

@@ -1,0 +1,7 @@
+<data table="extrap_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="ext_code"/>
+    <column offset="1" tableColumn="ext_desc"/>
+  </columns>
+</data>
+

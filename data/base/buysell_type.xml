@@ -1,0 +1,7 @@
+<data table="buysell_type" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="bys_code"/>
+    <column offset="1" tableColumn="bys_desc"/>
+  </columns>
+</data>
+

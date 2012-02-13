@@ -1,0 +1,15 @@
+<data table="rate" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="rat_id"/>
+    <column offset="1" tableColumn="rat_name"/>
+    <column offset="2" tableColumn="rat_ast_code"/>
+    <column offset="3" tableColumn="rat_rtt_code"/>
+    <column offset="4" tableColumn="rat_term_days"/>
+    <column offset="5" tableColumn="rat_term_weeks"/>
+    <column offset="6" tableColumn="rat_term_months"/>
+    <column offset="7" tableColumn="rat_term_years"/>
+    <column offset="8" tableColumn="rat_term_date"/>
+    <column offset="9" tableColumn="rat_term_hour"/>
+  </columns>
+</data>
+

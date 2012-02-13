@@ -1,0 +1,9 @@
+YC	Yield Curve
+FC	Forward Curve
+VS	Volatility Surface
+SC	Spread Curve
+EC	Equity Curve
+IV	Interest Rate Vol Surface
+CS	CDS Spread Curve
+FT	Future Curve
+EL	Electricity Forward Curve

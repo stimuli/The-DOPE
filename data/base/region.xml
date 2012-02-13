@@ -1,0 +1,7 @@
+<data table="region" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="reg_code"/>
+    <column offset="1" tableColumn="reg_name"/>
+  </columns>
+</data>
+

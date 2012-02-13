@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+<!-- Variance Swap Index Example -->
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="kom722" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000066</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate id="d989">2001-09-24Z</tradeDate>
+    </tradeHeader>
+<!-- use distinct product type rather than deprecated variance leg within return swap -->
+    <varianceSwap>
+      <varianceLeg>
+        <payerPartyReference href="kom722" />
+        <receiverPartyReference href="kow029" />
+        <underlyer>
+          <singleUnderlyer>
+            <index>
+              <instrumentId instrumentIdScheme="http://www.fpml.org/schemes/4.1/instrumentId">.SP500</instrumentId>
+              <description>SP 500 Index</description>
+              <currency>USD</currency>
+              <exchangeId exchangeIdScheme="http://www.fpml.org/schemes/4.1/exchangeId">NYSE</exchangeId>
+              <relatedExchangeId exchangeIdScheme="http://www.fpml.org/schemes/4.1/exchangeId">CBOE</relatedExchangeId>
+            </index>
+          </singleUnderlyer>
+        </underlyer>
+        <settlementType>Cash</settlementType>
+        <valuation>
+          <valuationDate id="FinalValuationDate">
+            <adjustableDate>
+              <unadjustedDate>2004-07-21Z</unadjustedDate>
+              <dateAdjustments>
+                <businessDayConvention>NotApplicable</businessDayConvention>
+              </dateAdjustments>
+            </adjustableDate>
+          </valuationDate>
+          <futuresPriceValuation>true</futuresPriceValuation>
+        </valuation>
+        <amount>
+          <variance>
+            <closingLevel>true</closingLevel>
+            <varianceAmount>
+              <currency>USD</currency>
+              <amount>350000</amount>
+            </varianceAmount>
+            <varianceStrikePrice>950</varianceStrikePrice>
+            <exchangeTradedContractNearest>
+              <instrumentId instrumentIdScheme="http://www.fpml.org/schemes/4.1/instrumentId">.SP500</instrumentId>
+              <description>SP 500 INDEX</description>
+              <currency>USD</currency>
+              <exchangeId exchangeIdScheme="http://www.fpml.org/schemes/4.1/exchangeId">NYSE</exchangeId>
+              <relatedExchangeId exchangeIdScheme="http://www.fpml.org/schemes/4.1/exchangeId">CBOE</relatedExchangeId>
+              <contractReference>CBOE SEP04 SP500 FUTURE</contractReference>
+              <expirationDate>
+                <adjustableDate>
+                  <unadjustedDate>2004-09-23Z</unadjustedDate>
+                  <dateAdjustments>
+                    <businessDayConvention>NONE</businessDayConvention>
+                  </dateAdjustments>
+                </adjustableDate>
+              </expirationDate>
+            </exchangeTradedContractNearest>
+          </variance>
+        </amount>
+      </varianceLeg>
+    </varianceSwap>
+    <calculationAgent>
+      <calculationAgentPartyReference href="kom722" />
+    </calculationAgent>
+    <documentation>
+      <masterAgreement>
+        <masterAgreementType>ISDA2002</masterAgreementType>
+      </masterAgreement>
+      <contractualDefinitions>ISDA2000</contractualDefinitions>
+      <contractualDefinitions>ISDA2002Equity</contractualDefinitions>
+    </documentation>
+    <governingLaw>GBEN</governingLaw>
+  </trade>

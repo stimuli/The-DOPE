@@ -1,0 +1,7 @@
+<data table="currency" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="ccy_code"/>
+    <column offset="1" tableColumn="ccy_name"/>
+  </columns>
+</data>
+

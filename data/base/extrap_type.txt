@@ -1,0 +1,4 @@
+LAZ	Last Zero - Assume a flat zero rate.
+LINZ	Linear Zero - Imply a zero rate in a linear fashion
+LINDF	Linear Discount Factor - Imply a discount factor in a linear fashion
+ZZ	Zero-Zero - Imply a zero rate in a linear fashion, the zero rate at curve start is assumed to be zero (primarily for spread curves). The only time there is a difference between this and LINEAR_ZERO is on curve start.

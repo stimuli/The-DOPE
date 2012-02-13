@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000074</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-11-19Z</tradeDate>
+    </tradeHeader>
+    <fxSingleLeg>
+      <exchangedCurrency1>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <paymentAmount>
+          <currency>EUR</currency>
+          <amount>10000000</amount>
+        </paymentAmount>
+        <settlementInformation>
+          <standardSettlementStyle>Standard</standardSettlementStyle>
+        </settlementInformation>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>9175000</amount>
+        </paymentAmount>
+        <settlementInformation>
+          <standardSettlementStyle>Standard</standardSettlementStyle>
+        </settlementInformation>
+      </exchangedCurrency2>
+      <valueDate>2001-12-21Z</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>EUR</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>0.9175</rate>
+        <spotRate>0.9130</spotRate>
+        <forwardPoints>0.0045</forwardPoints>
+      </exchangeRate>
+    </fxSingleLeg>
+  </trade>

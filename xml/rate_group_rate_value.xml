@@ -1,0 +1,30 @@
+<table name="rate_group_rate_value">
+  <column name="rgr_id"
+          description="A unique identifier for this row."
+          type="INTEGER"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="rgr_rgp_id"
+          description="The rate group this rate value belongs to."
+          type="INTEGER"
+          required="true"/>
+  <column name="rgr_rat_id"
+          description="The rate identifier. Used to enforce the constraint that there is only one of each rat_id per group."
+          type="INTEGER"
+          required="true"/>
+  <column name="rgr_rav_id"
+          description="The rate value for this rate group."
+          type="INTEGER"
+          required="true"/>
+
+  <unique name="xrgr_rgp_id_rat_id">
+    <unique-column name="rgr_rgp_id"/>
+    <unique-column name="rgr_rat_id"/>
+  </unique>
+
+  <index name="xrgr_rgp_id">
+    <index-column name="rgr_rgp_id"/>
+  </index>
+
+</table>

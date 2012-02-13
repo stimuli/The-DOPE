@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000089</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-08-16Z</tradeDate>
+    </tradeHeader>
+    <fxAverageRateOption>
+      <buyerPartyReference href="party2" />
+      <sellerPartyReference href="party1" />
+      <expiryDateTime>
+        <expiryDate>2001-11-30Z</expiryDate>
+        <expiryTime>
+          <hourMinuteTime>12:30:00</hourMinuteTime>
+          <businessCenter>MXMC</businessCenter>
+        </expiryTime>
+      </expiryDateTime>
+      <exerciseStyle>European</exerciseStyle>
+      <fxOptionPremium>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <premiumAmount>
+          <currency>USD</currency>
+          <amount>1750</amount>
+        </premiumAmount>
+        <premiumSettlementDate>2001-08-18Z</premiumSettlementDate>
+      </fxOptionPremium>
+      <valueDate>2001-12-04Z</valueDate>
+      <putCurrencyAmount>
+        <currency>MXN</currency>
+        <amount>5750000</amount>
+      </putCurrencyAmount>
+      <callCurrencyAmount>
+        <currency>USD</currency>
+        <amount>585539.71</amount>
+      </callCurrencyAmount>
+      <fxStrikePrice>
+        <rate>9.82</rate>
+        <strikeQuoteBasis>PutCurrencyPerCallCurrency</strikeQuoteBasis>
+      </fxStrikePrice>
+      <payoutCurrency>USD</payoutCurrency>
+      <averageRateQuoteBasis>PutCurrencyPerCallCurrency</averageRateQuoteBasis>
+      <primaryRateSource>
+        <rateSource>Reuters</rateSource>
+        <rateSourcePage>BNBX</rateSourcePage>
+      </primaryRateSource>
+      <fixingTime>
+        <hourMinuteTime>18:00:00</hourMinuteTime>
+        <businessCenter>MXMC</businessCenter>
+      </fixingTime>
+      <averageRateObservationSchedule>
+        <observationStartDate>2001-11-01Z</observationStartDate>
+        <observationEndDate>2001-11-30Z</observationEndDate>
+        <calculationPeriodFrequency>
+          <periodMultiplier>1</periodMultiplier>
+          <period>T</period>
+          <rollConvention>NONE</rollConvention>
+        </calculationPeriodFrequency>
+      </averageRateObservationSchedule>
+    </fxAverageRateOption>
+  </trade>

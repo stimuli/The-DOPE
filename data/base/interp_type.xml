@@ -1,0 +1,7 @@
+<data table="interp_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="int_code"/>
+    <column offset="1" tableColumn="int_desc"/>
+  </columns>
+</data>
+

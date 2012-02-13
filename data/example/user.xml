@@ -1,0 +1,8 @@
+<data table="user" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="usr_id"/>
+    <column offset="1" tableColumn="usr_login"/>
+    <column offset="2" tableColumn="usr_name"/>
+  </columns>
+</data>
+

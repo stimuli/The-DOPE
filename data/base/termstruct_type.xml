@@ -1,0 +1,7 @@
+<data table="termstruct_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="trt_code"/>
+    <column offset="1" tableColumn="trt_desc"/>
+  </columns>
+</data>
+

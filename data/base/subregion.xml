@@ -1,0 +1,8 @@
+<data table="subregion" fieldDelimiter="," fieldQuoted="true" fieldQuoteChar="'">
+  <columns>
+    <column offset="0" tableColumn="srg_code"/>
+    <column offset="1" tableColumn="srg_name"/>
+    <column offset="2" tableColumn="srg_reg_code"/>
+  </columns>
+</data>
+

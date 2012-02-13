@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000016</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2002-12-03Z</tradeDate>
+    </tradeHeader>
+    <creditDefaultSwap>
+      <generalTerms>
+        <effectiveDate>
+          <unadjustedDate>2002-12-04Z</unadjustedDate>
+        </effectiveDate>
+        <scheduledTerminationDate>
+          <unadjustedDate>2007-09-06Z</unadjustedDate>
+        </scheduledTerminationDate>
+        <sellerPartyReference href="party2" />
+        <buyerPartyReference href="party1" />
+        <referenceInformation>
+          <referenceEntity id="referenceEntity">
+            <entityName>Tenet Healthcare Corporation</entityName>
+            <entityId entityIdScheme="http://www.fpml.org/spec/2003/entity-id-RED-1-0">8G836J</entityId>
+          </referenceEntity>
+          <referenceObligation>
+            <bond>
+              <instrumentId instrumentIdScheme="http://www.fpml.org/spec/2002/instrument-id-CUSIP-1-0">88033GAT7</instrumentId>
+              <couponRate>0.06</couponRate>
+              <maturity>2011-12-01</maturity>
+            </bond>
+            <primaryObligorReference href="referenceEntity" />
+          </referenceObligation>
+        </referenceInformation>
+      </generalTerms>
+      <feeLeg>
+        <periodicPayment>
+          <paymentFrequency>
+            <periodMultiplier>3</periodMultiplier>
+            <period>M</period>
+          </paymentFrequency>
+          <firstPaymentDate>2003-03-06Z</firstPaymentDate>
+          <rollConvention>6</rollConvention>
+          <fixedAmountCalculation>
+            <fixedRate>0.01</fixedRate>
+          </fixedAmountCalculation>
+        </periodicPayment>
+      </feeLeg>
+      <protectionTerms>
+        <calculationAmount>
+          <currency>USD</currency>
+          <amount>5000000</amount>
+        </calculationAmount>
+        <creditEvents>
+          <restructuring>
+            <restructuringType>ModR</restructuringType>
+          </restructuring>
+        </creditEvents>
+      </protectionTerms>
+    </creditDefaultSwap>
+    <documentation>
+      <masterConfirmation>
+        <masterConfirmationType>ISDA1999Credit</masterConfirmationType>
+        <masterConfirmationDate>2001-01-04Z</masterConfirmationDate>
+      </masterConfirmation>
+    </documentation>
+  </trade>

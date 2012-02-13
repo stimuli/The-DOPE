@@ -1,0 +1,7 @@
+<data table="product" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="prd_code"/>
+    <column offset="1" tableColumn="prd_name"/>
+  </columns>
+</data>
+

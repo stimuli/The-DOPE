@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000073</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-11-12Z</tradeDate>
+    </tradeHeader>
+    <fxSingleLeg>
+      <exchangedCurrency1>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <paymentAmount>
+          <currency>GBP</currency>
+          <amount>10000000</amount>
+        </paymentAmount>
+        <settlementInformation>
+          <settlementInstruction>
+            <settlementMethod>SWIFT</settlementMethod>
+            <correspondentInformation>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">UBSWGB2L</routingId>
+              </routingIds>
+            </correspondentInformation>
+            <beneficiaryBank>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">CITIGB2L</routingId>
+              </routingIds>
+            </beneficiaryBank>
+            <beneficiary>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">CITIUS33</routingId>
+              </routingIds>
+            </beneficiary>
+          </settlementInstruction>
+        </settlementInformation>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>14643000</amount>
+        </paymentAmount>
+        <settlementInformation>
+          <settlementInstruction>
+            <beneficiaryBank>
+              <routingIdsAndExplicitDetails>
+                <routingIds>
+                  <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">CITIUS33</routingId>
+                </routingIds>
+                <routingName>Citibank</routingName>
+                <routingAccountNumber>/C/1234567788</routingAccountNumber>
+              </routingIdsAndExplicitDetails>
+            </beneficiaryBank>
+            <beneficiary>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">UBSWCHZH</routingId>
+              </routingIds>
+            </beneficiary>
+          </settlementInstruction>
+        </settlementInformation>
+      </exchangedCurrency2>
+      <valueDate>2002-04-01Z</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>GBP</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>1.4643</rate>
+      </exchangeRate>
+    </fxSingleLeg>
+  </trade>

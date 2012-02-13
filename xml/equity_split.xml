@@ -1,0 +1,50 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="equity_split">
+  <column name="esp_id"
+          description="The unique record identifier of this equity split."
+          type="INTEGER"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="esp_eqy_code"
+          description="The equity that this split is based on."
+          type="VARCHAR"
+          size="30"
+          required="true"/>
+  <column name="esp_announce_date"
+          description="The announcement date of this split."
+          type="DATE"
+          required="false"/>
+  <column name="esp_ratio"
+          description="The ratio of the equity split."
+          type="VARCHAR"
+          size="10"
+          required="true"/>
+  <column name="esp_split_date"
+          description="The date the split is taking place."
+          type="DATE"
+          required="true"/>
+
+  <foreign-key foreignTable="equity">
+    <reference local="esp_eqy_code" foreign="eqy_code"/>
+  </foreign-key>
+
+  <index name="xesp_split_date">
+    <index-column name="esp_split_date"/>
+  </index>
+
+</table>

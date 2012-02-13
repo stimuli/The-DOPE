@@ -1,0 +1,244 @@
+AX	Aland Islands	EUR	NEU
+TL	Timor-Leste	USD	SEA
+RS	Serbia	RSD	CEU
+MF	Saint Martin (French part)	EUR	CAR
+PM	Saint Pierre and Miquelon	EUR	NAM
+BL	Saint Barthelemy	EUR	SEU
+ME	Montenegro	EUR	SEU
+SH	Saint Helena	SHP	WAF
+JE	Jersey	GBP	NEU
+IM	Isle of Man	GBP	NEU
+GG	Guernsey	GBP	NEU
+BD	Bangladesh	BDT	SCA
+BE	Belgium	EUR	WEU
+BF	Burkina Faso	XOF	WAF
+BG	Bulgaria	BGL	EEU
+BA	Bosnia and Herzegovina	BAK	SEU
+BB	Barbados	BBD	CAR
+WF	Wallis and Futuna	XPF	POL
+BM	Bermuda	BMD	NAM
+BN	Brunei Darussalam	BND	SEA
+BO	Bolivia	BOB	SAM
+BH	Bahrain	BHD	WAS
+BI	Burundi	BIF	EAF
+BJ	Benin	XOF	WAF
+BT	Bhutan	INR	SCA
+JM	Jamaica	JMD	CAR
+BV	Bouvet Island	NOK	ANT
+BW	Botswana	BWP	SAF
+WS	Samoa	EUR	POL
+BR	Brazil	BRR	SAM
+BS	Bahamas	BSD	CAR
+BY	Belarus	BYR	EEU
+BZ	Belize	BZD	CAM
+RU	Russian Federation	RUR	EEU
+RW	Rwanda	RWF	EAF
+RE	Reunion	EUR	EAF
+TM	Turkmenistan	TMM	SCA
+TJ	Tajikistan	TJR	SCA
+RO	Romania	ROL	EEU
+TK	Tokelau	NZD	POL
+GW	Guinea-Bissau	XOF	WAF
+GU	Guam	USD	MIC
+GT	Guatemala	GTQ	CAM
+GS	South Georgia and the South Sandwich Islands	GBP	ANT
+GR	Greece	EUR	SEU
+GQ	Equatorial Guinea	XAF	MAF
+GP	Guadeloupe	EUR	CAR
+JP	Japan	JPY	EAS
+GY	Guyana	GYD	SAM
+GF	French Guiana	EUR	SAM
+GE	Georgia	GEL	WAS
+GD	Grenada	XCD	CAR
+GB	United Kingdom	GBP	NEU
+GA	Gabon	XAF	MAF
+GN	Guinea	GNF	WAF
+GM	Gambia	GMD	WAF
+GL	Greenland	DKK	NAM
+GI	Gibraltar	GIP	SEU
+GH	Ghana	GHC	WAF
+OM	Oman	OMR	WAS
+TN	Tunisia	TND	NAF
+JO	Jordan	JOD	WAS
+HR	Croatia	HRK	SEU
+HT	Haiti	HTG	CAR
+HU	Hungary	HUF	EEU
+HK	Hong Kong	HKD	EAS
+HN	Honduras	HNL	CAM
+HM	Heard Island and McDonald Islands	AUD	ANT
+VE	Venezuela, Bolivarian Republic of	VEB	SAM
+PR	Puerto Rico	USD	CAR
+PW	Palau	USD	MIC
+PT	Portugal	EUR	SEU
+KN	Saint Kitts and Nevis	XCD	CAR
+PY	Paraguay	PYG	SAM
+IQ	Iraq	IQD	WAS
+PA	Panama	PAB	CAM
+PF	French Polynesia	XPF	POL
+PG	Papua New Guinea	PGK	ANZ
+PE	Peru	PEN	SAM
+PK	Pakistan	PKR	SCA
+PH	Philippines	PHP	SEA
+PN	Pitcairn	NZD	POL
+PL	Poland	PLZ	EEU
+ZM	Zambia	ZMK	EAF
+EH	Western Sahara	MAD	NAF
+EE	Estonia	EEK	NEU
+EG	Egypt	EGP	NAF
+ZA	South Africa	ZAR	SAF
+EC	Ecuador	ECS	SAM
+IT	Italy	EUR	SEU
+VN	Viet Nam	VND	SEA
+SB	Solomon Islands	SBD	MEL
+ET	Ethiopia	ETB	EAF
+SO	Somalia	SOS	EAF
+ZW	Zimbabwe	ZWD	EAF
+SA	Saudi Arabia	SAR	WAS
+ES	Spain	EUR	SEU
+ER	Eritrea	ETB	EAF
+MD	Moldova, Republic of	MDL	EEU
+MG	Madagascar	MGF	EAF
+MA	Morocco	MAD	NAF
+MC	Monaco	EUR	WEU
+UZ	Uzbekistan	UZS	SCA
+MM	Myanmar	MMK	SEA
+ML	Mali	XOF	WAF
+MO	Macao	MOP	EAS
+MN	Mongolia	MNT	EAS
+MH	Marshall Islands	USD	MIC
+MK	Macedonia, the former Yugoslav Republic of	MKD	SEU
+MU	Mauritius	MUR	EAF
+MT	Malta	MTL	SEU
+MW	Malawi	MWK	EAF
+MV	Maldives	MVR	SCA
+MQ	Martinique	EUR	CAR
+MP	Northern Mariana Islands	USD	MIC
+MS	Montserrat	XCD	CAR
+MR	Mauritania	MRO	WAF
+UG	Uganda	UGX	EAF
+MY	Malaysia	MYR	SEA
+MX	Mexico	MXP	CAM
+IL	Israel	ILS	WAS
+FR	France	EUR	WEU
+AW	Aruba	ANG	CAR
+SJ	Svalbard and Jan Mayen	NOK	NEU
+FI	Finland	EUR	NEU
+FJ	Fiji	FJD	MEL
+FK	Falkland Islands (Malvinas)	FKP	SAM
+FM	Micronesia, Federated States of	USD	MIC
+FO	Faroe Islands	DKK	NEU
+NI	Nicaragua	NIO	CAM
+NL	Netherlands	EUR	WEU
+NO	Norway	NOK	NEU
+NA	Namibia	NAD	SAF
+VU	Vanuatu	VUV	MEL
+NC	New Caledonia	XPF	ANZ
+NE	Niger	XOF	WAF
+NF	Norfolk Island	AUD	ANZ
+NG	Nigeria	NGN	WAF
+NZ	New Zealand	NZD	ANZ
+NP	Nepal	NPR	SCA
+NR	Nauru	AUD	MIC
+NU	Niue	NZD	POL
+CK	Cook Islands	NZD	POL
+CI	Cote d'Ivoire	XOF	WAF
+CH	Switzerland	CHF	WEU
+CO	Colombia	COP	SAM
+CN	China	CNY	EAS
+CM	Cameroon	XAF	MAF
+CL	Chile	CLP	SAM
+CC	Cocos (Keeling) Islands	AUD	SEA
+CA	Canada	CAD	NAM
+CG	Congo	XAF	MAF
+CF	Central African Republic	XAF	MAF
+CD	Congo, Democratic Republic of the	CDF	MAF
+CZ	Czech Republic	CSK	EEU
+CY	Cyprus	CYP	WAS
+CX	Christmas Island	AUD	SEA
+CR	Costa Rica	CRC	CAM
+CV	Cape Verde	CVE	WAF
+CU	Cuba	CUP	CAR
+SZ	Swaziland	SZL	SAF
+SY	Syrian Arab Republic	SYP	WAS
+KG	Kyrgyzstan	KGS	SCA
+KE	Kenya	KES	EAF
+SR	Suriname	SRG	SAM
+KI	Kiribati	AUD	MIC
+KH	Cambodia	KHR	SEA
+SV	El Salvador	SVC	CAM
+KM	Comoros	KMF	EAF
+ST	Sao Tome and Principe	STD	MAF
+SK	Slovakia	SKK	EEU
+KR	Korea, Republic of	KRW	EAS
+SI	Slovenia	EUR	SEU
+KP	Korea, Democratic People's Republic of	KPW	EAS
+KW	Kuwait	KWD	WAS
+SN	Senegal	XOF	WAF
+SM	San Marino	EUR	SEU
+SL	Sierra Leone	SLL	WAF
+SC	Seychelles	SCR	EAF
+KZ	Kazakhstan	KZT	SCA
+KY	Cayman Islands	KYD	CAR
+SG	Singapore	SGD	SEA
+SE	Sweden	SEK	NEU
+SD	Sudan	SDD	NAF
+DO	Dominican Republic	DOP	CAR
+DM	Dominica	XCD	CAR
+DJ	Djibouti	DJF	EAF
+DK	Denmark	DKK	NEU
+VG	Virgin Islands, British	USD	CAR
+DE	Germany	EUR	WEU
+YE	Yemen	YER	WAS
+DZ	Algeria	DZD	NAF
+US	United States	USD	NAM
+UY	Uruguay	UYU	SAM
+YT	Mayotte	EUR	SAF
+UM	United States Minor Outlying Islands	USD	MIC
+LB	Lebanon	LBP	WAS
+LC	Saint Lucia	XCD	CAR
+LA	Lao People's Democratic Republic	LAK	SEA
+TV	Tuvalu	AUD	POL
+TW	Taiwan, Province of China	TWD	EAS
+TT	Trinidad and Tobago	TTD	CAR
+TR	Turkey	TRL	WAS
+LK	Sri Lanka	LKR	SCA
+LI	Liechtenstein	CHF	WEU
+LV	Latvia	LVL	NEU
+TO	Tonga	TOP	POL
+LT	Lithuania	LTL	NEU
+LU	Luxembourg	EUR	WEU
+LR	Liberia	LRD	WAF
+LS	Lesotho	LSL	SAF
+TH	Thailand	THB	SEA
+TF	French Southern Territories	EUR	ANT
+TG	Togo	XOF	WAF
+TD	Chad	XAF	MAF
+TC	Turks and Caicos Islands	USD	CAR
+LY	Libyan Arab Jamahiriya	LYD	NAF
+VA	Holy See (Vatican City State)	EUR	SEU
+VC	Saint Vincent and the Grenadines	XCD	CAR
+AE	United Arab Emirates	AED	WAS
+AD	Andorra	EUR	SEU
+AG	Antigua and Barbuda	XCD	CAR
+AF	Afghanistan	AFA	SCA
+AI	Anguilla	XCD	CAR
+VI	Virgin Islands, U.S.	USD	CAR
+IS	Iceland	ISK	NEU
+IR	Iran, Islamic Republic of	IRR	SCA
+AM	Armenia	AMD	WAS
+AL	Albania	ALL	SEU
+AO	Angola	AOK	MAF
+AN	Netherlands Antilles	ANG	CAR
+AS	American Samoa	EUR	POL
+AR	Argentina	ARP	SAM
+AU	Australia	AUD	ANZ
+AT	Austria	EUR	WEU
+IO	British Indian Ocean Territory	USD	SCA
+IN	India	INR	SCA
+TZ	Tanzania, United Republic of	TZS	EAF
+AZ	Azerbaijan	AZM	WAS
+IE	Ireland	EUR	NEU
+ID	Indonesia	IDR	SEA
+UA	Ukraine	UAH	EEU
+QA	Qatar	QAR	WAS
+MZ	Mozambique	MZM	EAF

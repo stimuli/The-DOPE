@@ -1,0 +1,7 @@
+<data table="termstruct_rate" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="trr_trm_id"/>
+    <column offset="1" tableColumn="trr_rat_id"/>
+  </columns>
+</data>
+

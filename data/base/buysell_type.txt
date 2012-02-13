@@ -1,0 +1,4 @@
+B	Buy
+S	Sell
+P	Pay Fixed
+R	Receive Fixed

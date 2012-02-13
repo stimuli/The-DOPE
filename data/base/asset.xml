@@ -1,0 +1,9 @@
+<data table="asset" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="ast_code"/>
+    <column offset="1" tableColumn="ast_aty_code"/>
+    <column offset="2" tableColumn="ast_desc"/>
+    <column offset="3" tableColumn="ast_data"/>
+  </columns>
+</data>
+

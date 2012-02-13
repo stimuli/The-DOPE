@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000105</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>1991-05-14-05:00</tradeDate>
+    </tradeHeader>
+    <fra>
+      <buyerPartyReference href="party1" />
+      <sellerPartyReference href="party2" />
+      <adjustedEffectiveDate id="resetDate">1991-07-17-05:00</adjustedEffectiveDate>
+      <adjustedTerminationDate>1992-01-17-05:00</adjustedTerminationDate>
+      <paymentDate>
+        <unadjustedDate>1991-07-17-05:00</unadjustedDate>
+        <dateAdjustments>
+          <businessDayConvention>FOLLOWING</businessDayConvention>
+          <businessCenters>
+            <businessCenter>CHZU</businessCenter>
+          </businessCenters>
+        </dateAdjustments>
+      </paymentDate>
+      <fixingDateOffset>
+        <periodMultiplier>-2</periodMultiplier>
+        <period>D</period>
+        <dayType>Business</dayType>
+        <businessDayConvention>NONE</businessDayConvention>
+        <businessCenters>
+          <businessCenter>GBLO</businessCenter>
+        </businessCenters>
+        <dateRelativeTo href="resetDate" />
+      </fixingDateOffset>
+      <dayCountFraction>ACT/360</dayCountFraction>
+      <calculationPeriodNumberOfDays>184</calculationPeriodNumberOfDays>
+      <notional>
+        <currency>CHF</currency>
+        <amount>25000000.00</amount>
+      </notional>
+      <fixedRate>0.04</fixedRate>
+      <floatingRateIndex>CHF-LIBOR-BBA</floatingRateIndex>
+      <indexTenor>
+        <periodMultiplier>6</periodMultiplier>
+        <period>M</period>
+      </indexTenor>
+      <fraDiscounting>ISDA</fraDiscounting>
+    </fra>
+  </trade>

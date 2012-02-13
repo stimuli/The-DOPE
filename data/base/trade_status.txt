@@ -1,0 +1,5 @@
+Q	A trade that's been quoted on, but not been done.
+N	A new unconfirmed trade.
+L	A live trade. Considered booked into the system.
+D	Deleted trade.
+W	A trade used in 'What-if' analysis.

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trade>
+  <tradeHeader>
+    <partyTradeIdentifier>
+      <partyReference href="FX" />
+      <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">fx.fwd.0000000001</tradeId>
+    </partyTradeIdentifier>
+    <tradeDate>2009-06-23Z</tradeDate>
+  </tradeHeader>
+  <fxSingleLeg>
+    <exchangedCurrency1>
+      <payerPartyReference href="STRIDER" />
+      <receiverPartyReference href="FX" />
+      <paymentAmount>
+        <currency>GBP</currency>
+        <amount>10000000</amount>
+      </paymentAmount>
+    </exchangedCurrency1>
+    <exchangedCurrency2>
+      <payerPartyReference href="FX" />
+      <receiverPartyReference href="STRIDER" />
+      <paymentAmount>
+        <currency>USD</currency>
+        <amount>14800000</amount>
+      </paymentAmount>
+    </exchangedCurrency2>
+    <valueDate>2010-10-25Z</valueDate>
+    <exchangeRate>
+      <quotedCurrencyPair>
+        <currency1>GBP</currency1>
+        <currency2>USD</currency2>
+        <quoteBasis>Currency2PerCurrency1</quoteBasis>
+      </quotedCurrencyPair>
+      <rate>1.48</rate>
+    </exchangeRate>
+  </fxSingleLeg>
+</trade>

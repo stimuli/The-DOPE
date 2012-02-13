@@ -1,0 +1,47 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="company_industry">
+  <column name="cin_cpy_id"
+          description="The company ID."
+          type="INTEGER"
+          required="true"/>
+  <column name="cin_ind_id"
+          description="The industry ID."
+          type="INTEGER"
+          required="true"/>
+
+  <foreign-key foreignTable="company">
+    <reference local="cin_cpy_id" foreign="cpy_id"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="industry">
+    <reference local="cin_ind_id" foreign="ind_id"/>
+  </foreign-key>
+
+  <unique name="xcin_cpy_id_ind_id">
+    <unique-column name="cin_cpy_id"/>
+    <unique-column name="cin_ind_id"/>
+  </unique>
+
+  <index name="xcin_cpy_id">
+    <index-column name="cin_cpy_id"/>
+  </index>
+
+  <index name="xcin_ind_id">
+    <index-column name="cin_ind_id"/>
+  </index>
+
+</table>

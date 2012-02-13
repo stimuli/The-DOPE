@@ -1,0 +1,6 @@
+LINDF	Linear Discount Factor
+LINZ	Linear Zero
+LLDF	Log Linear Discount Factor
+LLZ	Log Linear Zero
+SPDF	Spline Discount Factor
+NONE	No Interpolation

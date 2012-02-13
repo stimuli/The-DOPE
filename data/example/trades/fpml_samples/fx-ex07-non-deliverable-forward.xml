@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000076</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2002-01-09Z</tradeDate>
+    </tradeHeader>
+    <fxSingleLeg>
+      <exchangedCurrency1>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>10000000</amount>
+        </paymentAmount>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>INR</currency>
+          <amount>434000000</amount>
+        </paymentAmount>
+      </exchangedCurrency2>
+      <valueDate>2002-04-11Z</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>USD</currency1>
+          <currency2>INR</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>43.40</rate>
+        <spotRate>43.35</spotRate>
+        <forwardPoints>0.05</forwardPoints>
+      </exchangeRate>
+      <nonDeliverableForward>
+        <settlementCurrency>USD</settlementCurrency>
+        <fixing>
+          <primaryRateSource>
+            <rateSource>Reuters</rateSource>
+            <rateSourcePage>RBIB</rateSourcePage>
+          </primaryRateSource>
+          <fixingTime>
+            <hourMinuteTime>14:30:00</hourMinuteTime>
+            <businessCenter>INMU</businessCenter>
+          </fixingTime>
+          <quotedCurrencyPair>
+            <currency1>USD</currency1>
+            <currency2>INR</currency2>
+            <quoteBasis>Currency2PerCurrency1</quoteBasis>
+          </quotedCurrencyPair>
+          <fixingDate>2002-04-09Z</fixingDate>
+        </fixing>
+      </nonDeliverableForward>
+    </fxSingleLeg>
+  </trade>

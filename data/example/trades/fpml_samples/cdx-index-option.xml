@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="Party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000035</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate id="TRADEDATE">2006-01-16Z</tradeDate>
+    </tradeHeader>
+    <creditDefaultSwapOption>
+      <buyerPartyReference href="Party2" />
+      <sellerPartyReference href="Party1" />
+      <optionType>Payer</optionType>
+      <premium>
+        <payerPartyReference href="Party2" />
+        <receiverPartyReference href="Party1" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>45000</amount>
+        </paymentAmount>
+        <paymentDate>
+          <relativeDate>
+            <periodMultiplier>3</periodMultiplier>
+            <period>D</period>
+            <dayType>Business</dayType>
+            <businessDayConvention>NONE</businessDayConvention>
+            <businessCenters>
+              <businessCenter>USNY</businessCenter>
+              <businessCenter>GBLO</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="TRADEDATE" />
+          </relativeDate>
+        </paymentDate>
+        <premiumType>Fixed</premiumType>
+      </premium>
+      <europeanExercise>
+        <expirationDate>
+          <adjustableDate>
+            <unadjustedDate>2006-08-20Z</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>NotApplicable</businessDayConvention>
+            </dateAdjustments>
+          </adjustableDate>
+        </expirationDate>
+        <earliestExerciseTime>
+          <hourMinuteTime>09:00:00</hourMinuteTime>
+          <businessCenter>USNY</businessCenter>
+        </earliestExerciseTime>
+        <expirationTime>
+          <hourMinuteTime>11:00:00</hourMinuteTime>
+          <businessCenter>USNY</businessCenter>
+        </expirationTime>
+        <partialExercise>
+          <notionalReference href="NOTIONAL" />
+          <integralMultipleAmount>1</integralMultipleAmount>
+          <minimumNotionalAmount>1</minimumNotionalAmount>
+        </partialExercise>
+      </europeanExercise>
+      <exerciseProcedure>
+        <manualExercise>
+          <fallbackExercise>false</fallbackExercise>
+        </manualExercise>
+        <followUpConfirmation>true</followUpConfirmation>
+      </exerciseProcedure>
+      <notionalReference href="NOTIONAL" />
+      <settlementType>Physical</settlementType>
+      <strike>
+        <spread>0.0225</spread>
+      </strike>
+      <creditDefaultSwap>
+        <generalTerms>
+          <effectiveDate>
+            <unadjustedDate>2006-03-21Z</unadjustedDate>
+          </effectiveDate>
+          <scheduledTerminationDate>
+            <unadjustedDate>2011-06-20Z</unadjustedDate>
+          </scheduledTerminationDate>
+          <sellerPartyReference href="Party1" />
+          <buyerPartyReference href="Party2" />
+          <indexReferenceInformation>
+            <indexName indexNameScheme="234">Dow Jones CDX.NA.XO.6</indexName>
+            <indexId indexIdScheme="CUSIP">ExampleCUSIP3</indexId>
+          </indexReferenceInformation>
+        </generalTerms>
+        <feeLeg>
+          <periodicPayment>
+            <paymentFrequency>
+              <periodMultiplier>3</periodMultiplier>
+              <period>M</period>
+            </paymentFrequency>
+            <firstPaymentDate>2006-06-20Z</firstPaymentDate>
+            <lastRegularPaymentDate>2011-03-20Z</lastRegularPaymentDate>
+            <rollConvention>20</rollConvention>
+            <fixedAmountCalculation>
+              <calculationAmount>
+                <currency>USD</currency>
+                <amount>50000000</amount>
+              </calculationAmount>
+              <fixedRate>0.019</fixedRate>
+              <dayCountFraction>ACT/360</dayCountFraction>
+            </fixedAmountCalculation>
+          </periodicPayment>
+        </feeLeg>
+        <protectionTerms>
+          <calculationAmount id="NOTIONAL">
+            <currency>USD</currency>
+            <amount>50000000</amount>
+          </calculationAmount>
+        </protectionTerms>
+      </creditDefaultSwap>
+    </creditDefaultSwapOption>
+    <documentation>
+      <masterAgreement>
+        <masterAgreementType>ISDA1992</masterAgreementType>
+        <masterAgreementDate>1997-11-05Z</masterAgreementDate>
+      </masterAgreement>
+      <masterConfirmation>
+        <masterConfirmationType>DJ.CDX.NA</masterConfirmationType>
+        <masterConfirmationDate>2004-09-20Z</masterConfirmationDate>
+      </masterConfirmation>
+      <contractualDefinitions>ISDA2000</contractualDefinitions>
+      <contractualDefinitions>ISDA2003Credit</contractualDefinitions>
+    </documentation>
+  </trade>

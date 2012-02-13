@@ -1,0 +1,8 @@
+<data table="asset_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="aty_code"/>
+    <column offset="1" tableColumn="aty_desc"/>
+    <column offset="2" tableColumn="aty_prd_code"/>
+  </columns>
+</data>
+

@@ -1,0 +1,6 @@
+<data table="internal_unit" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="inu_code"/>
+    <column offset="1" tableColumn="inu_name"/>
+  </columns>
+</data>

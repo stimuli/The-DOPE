@@ -1,0 +1,11 @@
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('BA','Banker''s Acceptance');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('CD','Certificate of Deposit');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('RE','Repurchase Agreement');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('CP','Commerical Paper');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('DP','Eurodollar Deposit');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('FA','Federal Agency Securities');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('FF','Federal Funds');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('MU','Municipal Notes');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('TB','Treasury Bills');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('MF','Money Funds');
+INSERT INTO money_market_type(mmt_code,mmt_desc) VALUES ('XS','FX Swaps');

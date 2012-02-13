@@ -1,0 +1,5 @@
+FX/FWD	Forward FX	FX
+MM/PAY	Cash Payment	MM
+EQ	Equity Buy/Sell	EQ
+FX	Currency Pair	FX
+CCY	Currency	IR

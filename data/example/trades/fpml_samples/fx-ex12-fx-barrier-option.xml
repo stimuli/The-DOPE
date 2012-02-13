@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000081</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-08-16Z</tradeDate>
+    </tradeHeader>
+    <fxBarrierOption>
+      <buyerPartyReference href="party2" />
+      <sellerPartyReference href="party1" />
+      <expiryDateTime>
+        <expiryDate>2002-02-06Z</expiryDate>
+        <expiryTime>
+          <hourMinuteTime>10:00:00</hourMinuteTime>
+          <businessCenter>USNY</businessCenter>
+        </expiryTime>
+      </expiryDateTime>
+      <exerciseStyle>European</exerciseStyle>
+      <fxOptionPremium>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <premiumAmount>
+          <currency>USD</currency>
+          <amount>45000</amount>
+        </premiumAmount>
+        <premiumSettlementDate>2001-11-06Z</premiumSettlementDate>
+      </fxOptionPremium>
+      <valueDate>2002-02-08Z</valueDate>
+      <putCurrencyAmount>
+        <currency>USD</currency>
+        <amount>4500000</amount>
+      </putCurrencyAmount>
+      <callCurrencyAmount>
+        <currency>EUR</currency>
+        <amount>5000000</amount>
+      </callCurrencyAmount>
+      <fxStrikePrice>
+        <rate>0.9</rate>
+        <strikeQuoteBasis>PutCurrencyPerCallCurrency</strikeQuoteBasis>
+      </fxStrikePrice>
+      <spotRate>0.8935</spotRate>
+      <fxBarrier>
+        <fxBarrierType>Knockin</fxBarrierType>
+        <quotedCurrencyPair>
+          <currency1>EUR</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <triggerRate>0.8975</triggerRate>
+        <informationSource>
+          <rateSource>Reuters</rateSource>
+          <rateSourcePage>EUR=</rateSourcePage>
+        </informationSource>
+      </fxBarrier>
+    </fxBarrierOption>
+  </trade>

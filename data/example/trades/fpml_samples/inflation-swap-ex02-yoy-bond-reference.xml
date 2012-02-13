@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000094</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2003-11-15+05:00</tradeDate>
+    </tradeHeader>
+    <swap>
+      <swapStream>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <calculationPeriodDates id="N104F4">
+          <effectiveDate>
+            <unadjustedDate>2003-11-20+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </effectiveDate>
+          <terminationDate>
+            <unadjustedDate>2007-11-20+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </terminationDate>
+          <calculationPeriodDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </calculationPeriodDatesAdjustments>
+          <firstPeriodStartDate>
+            <unadjustedDate>2003-11-12+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </firstPeriodStartDate>
+          <calculationPeriodFrequency>
+            <periodMultiplier>1</periodMultiplier>
+            <period>Y</period>
+            <rollConvention>20</rollConvention>
+          </calculationPeriodFrequency>
+        </calculationPeriodDates>
+        <paymentDates>
+          <calculationPeriodDatesReference href="N104F4" />
+          <paymentFrequency>
+            <periodMultiplier>1</periodMultiplier>
+            <period>Y</period>
+          </paymentFrequency>
+          <firstPaymentDate>2004-11-20+05:00</firstPaymentDate>
+          <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+          <paymentDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </paymentDatesAdjustments>
+        </paymentDates>
+        <calculationPeriodAmount>
+          <calculation>
+            <notionalSchedule>
+              <notionalStepSchedule>
+                <initialValue>1</initialValue>
+                <currency>EUR</currency>
+              </notionalStepSchedule>
+            </notionalSchedule>
+            <fixedRateSchedule>
+              <initialValue>0.01</initialValue>
+            </fixedRateSchedule>
+            <dayCountFraction>30/360</dayCountFraction>
+          </calculation>
+        </calculationPeriodAmount>
+      </swapStream>
+      <swapStream>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <calculationPeriodDates id="N101C1">
+          <effectiveDate>
+            <unadjustedDate>2003-11-20+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </effectiveDate>
+          <terminationDate>
+            <unadjustedDate>2007-11-20+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </terminationDate>
+          <calculationPeriodDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </calculationPeriodDatesAdjustments>
+          <firstPeriodStartDate>
+            <unadjustedDate>2003-11-12+05:00</unadjustedDate>
+            <dateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>EUTA</businessCenter>
+              </businessCenters>
+            </dateAdjustments>
+          </firstPeriodStartDate>
+          <calculationPeriodFrequency>
+            <periodMultiplier>3</periodMultiplier>
+            <period>M</period>
+            <rollConvention>20</rollConvention>
+          </calculationPeriodFrequency>
+        </calculationPeriodDates>
+        <paymentDates>
+          <calculationPeriodDatesReference href="N101C1" />
+          <paymentFrequency>
+            <periodMultiplier>1</periodMultiplier>
+            <period>Y</period>
+          </paymentFrequency>
+          <firstPaymentDate>2004-11-20+05:00</firstPaymentDate>
+          <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+          <paymentDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </paymentDatesAdjustments>
+        </paymentDates>
+        <resetDates id="resetDates">
+          <calculationPeriodDatesReference href="N101C1" />
+          <fixingDates>
+            <periodMultiplier>-2</periodMultiplier>
+            <period>D</period>
+            <dayType>Business</dayType>
+            <businessDayConvention>NONE</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="resetDates" />
+          </fixingDates>
+          <resetFrequency>
+            <periodMultiplier>3</periodMultiplier>
+            <period>M</period>
+          </resetFrequency>
+          <resetDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </resetDatesAdjustments>
+        </resetDates>
+        <calculationPeriodAmount>
+          <calculation>
+            <notionalSchedule>
+              <notionalStepSchedule>
+                <initialValue>1</initialValue>
+                <currency>EUR</currency>
+              </notionalStepSchedule>
+            </notionalSchedule>
+<!-- This is the inflation substitution group. -->
+            <inflationRateCalculation>
+              <floatingRateIndex floatingRateIndexScheme="http://www.fpml.org/coding-scheme/inflation-index-description-2-0">USA-CPI-U</floatingRateIndex>
+              <indexTenor>
+                <periodMultiplier>1</periodMultiplier>
+                <period>Y</period>
+              </indexTenor>
+              <inflationLag>
+                <periodMultiplier>3</periodMultiplier>
+                <period>M</period>
+              </inflationLag>
+              <indexSource rateSourcePageScheme="http://www.fpml.org/coding-scheme/inflation-index-source-1-0">CPURNSA</indexSource>
+              <mainPublication mainPublicationScheme="http://www.fpml.org/coding-scheme/inflation-main-publication-1-0">BLS</mainPublication>
+              <interpolationMethod>LinearZeroYield</interpolationMethod>
+            </inflationRateCalculation>
+            <dayCountFraction>1/1</dayCountFraction>
+            <compoundingMethod>None</compoundingMethod>
+          </calculation>
+        </calculationPeriodAmount>
+      </swapStream>
+      <additionalPayment>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>EUR</currency>
+          <amount>10000</amount>
+        </paymentAmount>
+        <paymentDate>
+          <unadjustedDate>2003-11-20+05:00</unadjustedDate>
+          <dateAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>EUTA</businessCenter>
+            </businessCenters>
+          </dateAdjustments>
+        </paymentDate>
+        <paymentType>Fee</paymentType>
+      </additionalPayment>
+      <additionalTerms>
+        <bondReference>
+          <bond>
+            <instrumentId instrumentIdScheme="http://www.fpml.org/spec/2002/instrument-id-ISIN-1-0">XS0125141316</instrumentId>
+            <couponRate>0.06</couponRate>
+            <maturity>2011-02-22</maturity>
+          </bond>
+          <conditionPrecedentBond>true</conditionPrecedentBond>
+        </bondReference>
+      </additionalTerms>
+    </swap>
+    <calculationAgent>
+      <calculationAgentPartyReference href="party1" />
+    </calculationAgent>
+  </trade>

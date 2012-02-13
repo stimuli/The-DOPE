@@ -1,0 +1,14 @@
+ACT/360	Actual / 360
+ACT/365	Actual / 365
+30/360	30/360 Assumes ISDA 2006 Definition
+E30/360	30E/360
+ACT/ACT	Actual / Actual
+ACT/365.25	Actual / 365.25
+ACT.365_FIXED	Actual / 365 Fixed
+ACT/ACT_ISDA	Actual / 365 ISDA
+ACT/ACT_ISMA	Actual / 365 ISMA
+ACT/ACT_AFB	Actual / 365 AFB
+ACT/365_END	Actual / 365 Fixed
+ACT/1_1	1 / 1
+ACT/365_ACT	Actual / 365(Actual)
+BUS_252	bus days / 252 for Brazilian Real

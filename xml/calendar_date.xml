@@ -1,0 +1,41 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<table name="calendar_date">
+  <column name="cal_id"
+          type="INTEGER"
+          description="The calendar this event date belongs to."
+          required="true"/>
+  <column name="cal_dty_id"
+          description="The type of event occuring on this date."
+          type="INTEGER"
+          required="true"/>
+  <column name="cal_date"
+          description="The actual date this event occurs."
+          type="DATE"
+          required="true"/>
+
+  <foreign-key foreignTable="date_type">
+    <reference local="cal_dty_id" foreign="dty_id"/>
+  </foreign-key>
+
+  <unique name="xcal_id_date">
+    <unique-column name="cal_id"/>
+    <unique-column name="cal_dty_id"/>
+    <unique-column name="cal_date"/>
+  </unique>
+</table>
+

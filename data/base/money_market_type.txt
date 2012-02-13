@@ -1,0 +1,11 @@
+BA	Banker's Acceptance
+CD	Certificate of Deposit
+RE	Repurchase Agreement
+CP	Commerical Paper
+DP	Eurodollar Deposit
+FA	Federal Agency Securities
+FF	Federal Funds
+MU	Municipal Notes
+TB	Treasury Bills
+MF	Money Funds
+XS	FX Swaps

@@ -1,0 +1,10 @@
+<data table="currency_pair" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="cyp_code"/>
+    <column offset="1" tableColumn="cyp_ccy_code_1"/>
+    <column offset="2" tableColumn="cyp_ccy_code_2"/>
+    <column offset="3" tableColumn="cyp_quote_convention"/>
+    <column offset="4" tableColumn="cyp_spot_days"/>
+    <column offset="5" tableColumn="cyp_decimal_places"/>
+  </columns>
+</data>

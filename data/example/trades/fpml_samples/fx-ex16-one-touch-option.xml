@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000085</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-11-12Z</tradeDate>
+    </tradeHeader>
+    <fxDigitalOption>
+      <productType>One Touch</productType>
+      <buyerPartyReference href="party2" />
+      <sellerPartyReference href="party1" />
+      <expiryDateTime>
+        <expiryDate>2001-11-26Z</expiryDate>
+        <expiryTime>
+          <hourMinuteTime>14:00:00</hourMinuteTime>
+          <businessCenter>GBLO</businessCenter>
+        </expiryTime>
+        <cutName>LondonEveningPgm</cutName>
+      </expiryDateTime>
+      <fxOptionPremium>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <premiumAmount>
+          <currency>GBP</currency>
+          <amount>78000</amount>
+        </premiumAmount>
+        <premiumSettlementDate>2001-11-14Z</premiumSettlementDate>
+      </fxOptionPremium>
+      <valueDate>2001-11-26Z</valueDate>
+      <quotedCurrencyPair>
+        <currency1>GBP</currency1>
+        <currency2>USD</currency2>
+        <quoteBasis>Currency2PerCurrency1</quoteBasis>
+      </quotedCurrencyPair>
+      <spotRate>1.4800</spotRate>
+      <fxAmericanTrigger>
+        <touchCondition>Touch</touchCondition>
+        <quotedCurrencyPair>
+          <currency1>GBP</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <triggerRate>1.5200</triggerRate>
+        <informationSource>
+          <rateSource>Reuters</rateSource>
+          <rateSourcePage>GBP=</rateSourcePage>
+        </informationSource>
+        <observationStartDate>2001-11-12Z</observationStartDate>
+        <observationEndDate>2001-11-26Z</observationEndDate>
+      </fxAmericanTrigger>
+      <triggerPayout>
+        <currency>GBP</currency>
+        <amount>2000000</amount>
+        <payoutStyle>Deferred</payoutStyle>
+      </triggerPayout>
+    </fxDigitalOption>
+  </trade>

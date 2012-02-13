@@ -1,0 +1,7 @@
+FX	FX Rate
+PR	Price
+DV	Equity Dividend
+IA	Interest Rate (Compounded Annually)
+IP	Par Interest Rate
+VO	Volatility
+DY	Dividend Yield

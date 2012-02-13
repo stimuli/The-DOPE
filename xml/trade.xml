@@ -1,0 +1,107 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="trade">
+  <column name="trd_id"
+          type="INTEGER"
+          description="A unique ID that identifies this record in the DB"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="trd_key"
+          description="The actual Trade ID. There may be more than one record with the same trade key as the trade changes over time."
+          type="VARCHAR"
+          size="50"
+          required="true"/>
+  <column name="trd_insert_time"
+          description="The date/time this record was inserted."
+          type="TIMESTAMP"
+          required="true"/>
+  <column name="trd_trade_date"
+          description="The date this trade was traded."
+          type="DATE"
+          required="true"/>
+  <column name="trd_usr_id"
+          description="The user ID of the user who inserted this record."
+          type="VARCHAR"
+          size="15"
+          required="true"/>
+  <column name="trd_tst_code"
+          description="The status of the trade."
+          type="CHAR"
+          size="1"
+          required="true"/>
+  <column name="trd_tty_code"
+          description="The type of trade this is. Determines how the trade data is interpreted."
+          type="VARCHAR"
+          size="50"
+          required="true"/>
+  <column name="trd_bys_code"
+          description="Whether the trade is buy or sell or pay/receive fixed."
+          type="CHAR"
+          size="1"
+          required="true"/>
+  <column name="trd_cpt_key"
+          description="The counterparty identifier."
+          type="VARCHAR"
+          size="30"
+          required="true"/>
+  <column name="trd_bok_code"
+          description="The book code that this trade is booked into."
+          type="VARCHAR"
+          size="10"
+          required="false"/>
+  <column name="trd_data"
+          description="The trade-specific information."
+          type="BLOB"
+          required="true"/>
+
+  <foreign-key foreignTable="user">
+    <reference local="trd_usr_id" foreign="usr_id"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="trade_status">
+    <reference local="trd_tst_code" foreign="tst_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="trade_type">
+    <reference local="trd_tty_code" foreign="tty_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="buysell_type">
+    <reference local="trd_bys_code" foreign="bys_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="counterparty">
+    <reference local="trd_cpt_key" foreign="cpt_key"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="book">
+    <reference local="trd_bok_code" foreign="bok_code"/>
+  </foreign-key>
+
+  <unique name="xtrd_key_insert_time">
+    <unique-column name="trd_key"/>
+    <unique-column name="trd_insert_time"/>
+  </unique>
+
+  <index name="xtrd_usr_id">
+    <index-column name="trd_usr_id"/>
+  </index>
+
+  <index name="xtrd_tty_code">
+    <index-column name="trd_tty_code"/>
+  </index>
+</table>

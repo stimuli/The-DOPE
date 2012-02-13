@@ -1,0 +1,18 @@
+<data table="money_market_asset" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="mma_ast_code"/>
+    <column offset="1" tableColumn="mma_ccy_code"/>
+    <column offset="2" tableColumn="mma_mmt_code"/>
+    <column offset="3" tableColumn="mma_dyc_code"/>
+    <column offset="4" tableColumn="mma_dtr_code"/>
+    <column offset="5" tableColumn="mma_spot_term_days"/>
+    <column offset="6" tableColumn="mma_spot_term_weeks"/>
+    <column offset="7" tableColumn="mma_spot_term_months"/>
+    <column offset="8" tableColumn="mma_spot_term_years"/>
+    <column offset="9" tableColumn="mma_maturity_term_days"/>
+    <column offset="10" tableColumn="mma_maturity_term_weeks"/>
+    <column offset="11" tableColumn="mma_maturity_term_months"/>
+    <column offset="12" tableColumn="mma_maturity_term_years"/>
+  </columns>
+</data>
+

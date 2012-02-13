@@ -1,0 +1,12 @@
+<data table="termstruct" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="trm_id"/>
+    <column offset="1" tableColumn="trm_name"/>
+    <column offset="2" tableColumn="trm_ast_code"/>
+    <column offset="3" tableColumn="trm_trt_code"/>
+    <column offset="4" tableColumn="trm_int_code"/>
+    <column offset="5" tableColumn="trm_ext_code_start"/>
+    <column offset="6" tableColumn="trm_ext_code_end"/>
+  </columns>
+</data>
+

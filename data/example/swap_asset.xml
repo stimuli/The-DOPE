@@ -1,0 +1,21 @@
+<data table="swap_asset" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="swa_ast_code"/>
+    <column offset="1" tableColumn="swa_ccy_code"/>
+    <column offset="2" tableColumn="swa_dyc_code"/>
+    <column offset="3" tableColumn="swa_dtr_code"/>
+    <column offset="4" tableColumn="swa_spot_term_days"/>
+    <column offset="5" tableColumn="swa_spot_term_weeks"/>
+    <column offset="6" tableColumn="swa_spot_term_months"/>
+    <column offset="7" tableColumn="swa_spot_term_years"/>
+    <column offset="8" tableColumn="swa_maturity_term_days"/>
+    <column offset="9" tableColumn="swa_maturity_term_weeks"/>
+    <column offset="10" tableColumn="swa_maturity_term_months"/>
+    <column offset="11" tableColumn="swa_maturity_term_years"/>
+    <column offset="12" tableColumn="swa_frequency_term_days"/>
+    <column offset="13" tableColumn="swa_frequency_term_weeks"/>
+    <column offset="14" tableColumn="swa_frequency_term_months"/>
+    <column offset="15" tableColumn="swa_frequency_term_years"/>
+  </columns>
+</data>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000092</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-12-04Z</tradeDate>
+    </tradeHeader>
+    <strategy>
+      <productType>Delta-Hedge</productType>
+      <fxSimpleOption>
+        <productType>European FX Option</productType>
+        <buyerPartyReference href="party1" />
+        <sellerPartyReference href="party2" />
+        <expiryDateTime>
+          <expiryDate>2002-06-04Z</expiryDate>
+          <expiryTime>
+            <hourMinuteTime>14:00:00</hourMinuteTime>
+            <businessCenter>USNY</businessCenter>
+          </expiryTime>
+          <cutName>NewYork</cutName>
+        </expiryDateTime>
+        <exerciseStyle>European</exerciseStyle>
+        <fxOptionPremium>
+          <payerPartyReference href="party1" />
+          <receiverPartyReference href="party2" />
+          <premiumAmount>
+            <currency>USD</currency>
+            <amount>36900</amount>
+          </premiumAmount>
+          <premiumSettlementDate>2001-12-06Z</premiumSettlementDate>
+          <premiumQuote>
+            <premiumValue>0.001</premiumValue>
+            <premiumQuoteBasis>PercentageOfCallCurrencyAmount</premiumQuoteBasis>
+          </premiumQuote>
+        </fxOptionPremium>
+        <valueDate>2002-06-06Z</valueDate>
+        <putCurrencyAmount>
+          <currency>AUD</currency>
+          <amount>75000000</amount>
+        </putCurrencyAmount>
+        <callCurrencyAmount>
+          <currency>USD</currency>
+          <amount>36900000</amount>
+        </callCurrencyAmount>
+        <fxStrikePrice>
+          <rate>0.4920</rate>
+          <strikeQuoteBasis>CallCurrencyPerPutCurrency</strikeQuoteBasis>
+        </fxStrikePrice>
+        <quotedAs>
+          <optionOnCurrency>AUD</optionOnCurrency>
+          <faceOnCurrency>USD</faceOnCurrency>
+          <quotedTenor>
+            <periodMultiplier>6</periodMultiplier>
+            <period>M</period>
+          </quotedTenor>
+        </quotedAs>
+      </fxSimpleOption>
+      <fxSingleLeg>
+        <productType>Spot-Hedge</productType>
+        <exchangedCurrency1>
+          <payerPartyReference href="party2" />
+          <receiverPartyReference href="party1" />
+          <paymentAmount>
+            <currency>AUD</currency>
+            <amount>18750000</amount>
+          </paymentAmount>
+        </exchangedCurrency1>
+        <exchangedCurrency2>
+          <payerPartyReference href="party1" />
+          <receiverPartyReference href="party2" />
+          <paymentAmount>
+            <currency>USD</currency>
+            <amount>9736875</amount>
+          </paymentAmount>
+        </exchangedCurrency2>
+        <valueDate>2001-12-06Z</valueDate>
+        <exchangeRate>
+          <quotedCurrencyPair>
+            <currency1>AUD</currency1>
+            <currency2>USD</currency2>
+            <quoteBasis>Currency2PerCurrency1</quoteBasis>
+          </quotedCurrencyPair>
+          <rate>0.5193</rate>
+        </exchangeRate>
+      </fxSingleLeg>
+    </strategy>
+  </trade>

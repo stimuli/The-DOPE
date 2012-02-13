@@ -1,0 +1,7 @@
+<data table="rate_group" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="rgp_id"/>
+    <column offset="1" tableColumn="rgp_name"/>
+  </columns>
+</data>
+

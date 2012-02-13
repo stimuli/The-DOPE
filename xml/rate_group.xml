@@ -1,0 +1,18 @@
+<table name="rate_group">
+  <column name="rgp_id"
+          description="A unique Rate Group identifier"
+          type="INTEGER"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="rgp_name"
+          description="A unique name for this rate group."
+          type="VARCHAR"
+          size="255"
+          required="true"/>
+
+  <unique name="xrgp_name">
+    <unique-column name="rgp_name"/>
+  </unique>
+
+</table>

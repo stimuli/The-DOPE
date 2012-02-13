@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000030</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2004-11-03Z</tradeDate>
+    </tradeHeader>
+    <creditDefaultSwap>
+      <generalTerms>
+        <scheduledTerminationDate>
+          <unadjustedDate>2010-03-20Z</unadjustedDate>
+        </scheduledTerminationDate>
+        <sellerPartyReference href="party2" />
+        <buyerPartyReference href="party1" />
+        <indexReferenceInformation>
+          <indexName>Dow Jones iTraxx Europe Consumers Series 2 Version 1</indexName>
+          <indexSeries>2</indexSeries>
+          <indexAnnexVersion>1</indexAnnexVersion>
+          <tranche>
+            <attachmentPoint>0.03</attachmentPoint>
+            <exhaustionPoint>0.07</exhaustionPoint>
+          </tranche>
+          <settledEntityMatrix>
+            <matrixSource>NotApplicable</matrixSource>
+          </settledEntityMatrix>
+        </indexReferenceInformation>
+      </generalTerms>
+      <feeLeg>
+        <initialPayment>
+          <payerPartyReference href="party1" />
+          <receiverPartyReference href="party2" />
+          <paymentAmount>
+            <currency>EUR</currency>
+            <amount>17000</amount>
+          </paymentAmount>
+        </initialPayment>
+      </feeLeg>
+      <protectionTerms>
+        <calculationAmount>
+          <currency>USD</currency>
+          <amount>25000000</amount>
+        </calculationAmount>
+      </protectionTerms>
+    </creditDefaultSwap>
+    <documentation>
+      <masterConfirmation>
+        <masterConfirmationType>DJ.iTraxx.Europe</masterConfirmationType>
+        <masterConfirmationDate>2004-10-11Z</masterConfirmationDate>
+      </masterConfirmation>
+    </documentation>
+  </trade>

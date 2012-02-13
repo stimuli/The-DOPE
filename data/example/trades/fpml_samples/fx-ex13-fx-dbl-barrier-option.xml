@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000082</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2002-01-03Z</tradeDate>
+    </tradeHeader>
+    <fxBarrierOption>
+      <productType>DOUBLEBARRIER</productType>
+      <buyerPartyReference href="party2" />
+      <sellerPartyReference href="party1" />
+      <expiryDateTime>
+        <expiryDate>2002-03-04Z</expiryDate>
+        <expiryTime>
+          <hourMinuteTime>10:00:00</hourMinuteTime>
+          <businessCenter>USNY</businessCenter>
+        </expiryTime>
+      </expiryDateTime>
+      <exerciseStyle>European</exerciseStyle>
+      <fxOptionPremium>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <premiumAmount>
+          <currency>USD</currency>
+          <amount>192765.35</amount>
+        </premiumAmount>
+        <premiumSettlementDate>2002-01-07Z</premiumSettlementDate>
+        <premiumQuote>
+          <premiumValue>0.0081</premiumValue>
+          <premiumQuoteBasis>PercentageOfCallCurrencyAmount</premiumQuoteBasis>
+        </premiumQuote>
+      </fxOptionPremium>
+      <valueDate>2002-03-06Z</valueDate>
+      <putCurrencyAmount>
+        <currency>JPY</currency>
+        <amount>2500000000</amount>
+      </putCurrencyAmount>
+      <callCurrencyAmount>
+        <currency>USD</currency>
+        <amount>23798191.34</amount>
+      </callCurrencyAmount>
+      <fxStrikePrice>
+        <rate>105.05</rate>
+        <strikeQuoteBasis>PutCurrencyPerCallCurrency</strikeQuoteBasis>
+      </fxStrikePrice>
+      <quotedAs>
+        <optionOnCurrency>JPY</optionOnCurrency>
+        <faceOnCurrency>USD</faceOnCurrency>
+        <quotedTenor>
+          <periodMultiplier>2</periodMultiplier>
+          <period>M</period>
+        </quotedTenor>
+      </quotedAs>
+      <spotRate>106</spotRate>
+      <fxBarrier>
+        <fxBarrierType>ReverseKnockout</fxBarrierType>
+        <quotedCurrencyPair>
+          <currency1>USD</currency1>
+          <currency2>JPY</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <triggerRate>102</triggerRate>
+        <informationSource>
+          <rateSource>Reuters</rateSource>
+          <rateSourcePage>JPY=</rateSourcePage>
+        </informationSource>
+      </fxBarrier>
+      <fxBarrier>
+        <fxBarrierType>Knockout</fxBarrierType>
+        <quotedCurrencyPair>
+          <currency1>USD</currency1>
+          <currency2>JPY</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <triggerRate>115</triggerRate>
+        <informationSource>
+          <rateSource>Reuters</rateSource>
+          <rateSourcePage>JPY=</rateSourcePage>
+        </informationSource>
+      </fxBarrier>
+    </fxBarrierOption>
+  </trade>

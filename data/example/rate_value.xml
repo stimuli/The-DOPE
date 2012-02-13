@@ -1,0 +1,9 @@
+<data table="rate_value" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="rav_id"/>
+    <column offset="1" tableColumn="rav_rat_id"/>
+    <column offset="2" tableColumn="rav_obs_datetime"/>
+    <column offset="3" tableColumn="rav_value"/>
+  </columns>
+</data>
+

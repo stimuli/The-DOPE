@@ -1,0 +1,9 @@
+<data table="counterparty" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="cpt_key"/>
+    <column offset="1" tableColumn="cpt_name"/>
+    <column offset="2" tableColumn="cpt_is_internal"/>
+    <column offset="3" tableColumn="cpt_cpy_id"/>
+  </columns>
+</data>
+

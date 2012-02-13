@@ -1,0 +1,5 @@
+NO	No Adjustment
+MF	Modified Following
+MP	Modified Preceeding
+FO	Following
+PR	Preceeding

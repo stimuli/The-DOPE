@@ -1,0 +1,7 @@
+<data table="book_group" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="bgp_code"/>
+    <column offset="1" tableColumn="bgp_name"/>
+  </columns>
+</data>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000131</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2002-02-14Z</tradeDate>
+    </tradeHeader>
+    <termDeposit>
+      <productType>Overnight Term Deposit</productType>
+      <initialPayerReference href="party1" />
+      <initialReceiverReference href="party2" />
+      <startDate>2002-02-14Z</startDate>
+      <maturityDate>2002-02-15Z</maturityDate>
+      <dayCountFraction>ACT/360</dayCountFraction>
+      <principal>
+        <currency>CHF</currency>
+        <amount>25000000.00</amount>
+      </principal>
+      <fixedRate>0.04</fixedRate>
+    </termDeposit>
+  </trade>

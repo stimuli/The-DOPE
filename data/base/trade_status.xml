@@ -1,0 +1,6 @@
+<data table="trade_status" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="tst_code"/>
+    <column offset="1" tableColumn="tst_desc"/>
+  </columns>
+</data>

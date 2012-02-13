@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000078</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2002-01-04Z</tradeDate>
+    </tradeHeader>
+    <fxSimpleOption>
+      <productType productTypeScheme="http://www.markets.Reuters.com/rss/spec/2001/product-type-1-0">Delta-Put-FX-Option</productType>
+      <buyerPartyReference href="party1" />
+      <sellerPartyReference href="party2" />
+      <expiryDateTime>
+        <expiryDate>2002-06-04Z</expiryDate>
+        <expiryTime>
+          <hourMinuteTime>14:00:00</hourMinuteTime>
+          <businessCenter id="primarybusinesscenter">USNY</businessCenter>
+        </expiryTime>
+        <cutName>NewYork</cutName>
+      </expiryDateTime>
+      <exerciseStyle>European</exerciseStyle>
+      <fxOptionPremium>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <premiumAmount>
+          <currency>USD</currency>
+          <amount>36900</amount>
+        </premiumAmount>
+        <premiumSettlementDate>2001-12-06Z</premiumSettlementDate>
+        <settlementInformation>
+          <settlementInstruction>
+            <correspondentInformation>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">CHASUS33</routingId>
+              </routingIds>
+            </correspondentInformation>
+            <beneficiary>
+              <routingIds>
+                <routingId routingIdCodeScheme="http://www.fpml.org/ext/iso9362">ABNANL2A</routingId>
+              </routingIds>
+            </beneficiary>
+          </settlementInstruction>
+        </settlementInformation>
+        <premiumQuote>
+          <premiumValue>0.001</premiumValue>
+          <premiumQuoteBasis>PercentageOfCallCurrencyAmount</premiumQuoteBasis>
+        </premiumQuote>
+      </fxOptionPremium>
+      <valueDate>2002-06-06Z</valueDate>
+      <putCurrencyAmount>
+        <currency>AUD</currency>
+        <amount>75000000</amount>
+      </putCurrencyAmount>
+      <callCurrencyAmount>
+        <currency>USD</currency>
+        <amount>36900000</amount>
+      </callCurrencyAmount>
+      <fxStrikePrice>
+        <rate>0.4920</rate>
+        <strikeQuoteBasis>CallCurrencyPerPutCurrency</strikeQuoteBasis>
+      </fxStrikePrice>
+      <quotedAs>
+        <optionOnCurrency>AUD</optionOnCurrency>
+        <faceOnCurrency>USD</faceOnCurrency>
+        <quotedTenor>
+          <periodMultiplier>6</periodMultiplier>
+          <period>M</period>
+        </quotedTenor>
+      </quotedAs>
+    </fxSimpleOption>
+  </trade>

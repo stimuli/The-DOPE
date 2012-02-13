@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000070</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-10-23Z</tradeDate>
+    </tradeHeader>
+    <fxSingleLeg>
+      <exchangedCurrency1>
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <paymentAmount>
+          <currency>GBP</currency>
+          <amount>10000000</amount>
+        </paymentAmount>
+      </exchangedCurrency1>
+      <exchangedCurrency2>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>14800000</amount>
+        </paymentAmount>
+      </exchangedCurrency2>
+      <valueDate>2001-10-25Z</valueDate>
+      <exchangeRate>
+        <quotedCurrencyPair>
+          <currency1>GBP</currency1>
+          <currency2>USD</currency2>
+          <quoteBasis>Currency2PerCurrency1</quoteBasis>
+        </quotedCurrencyPair>
+        <rate>1.48</rate>
+      </exchangeRate>
+    </fxSingleLeg>
+  </trade>

@@ -1,0 +1,6 @@
+MM	Money Market
+FX	FX
+EQ	Equity
+EN	Energy
+GD	Government Debt
+CF	Corporate Finance

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000125</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate>2001-04-29Z</tradeDate>
+    </tradeHeader>
+    <bulletPayment>
+      <payment>
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <paymentAmount>
+          <currency>USD</currency>
+          <amount>15000.00</amount>
+        </paymentAmount>
+        <paymentDate>
+          <unadjustedDate>2001-07-27Z</unadjustedDate>
+          <dateAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters id="businessCenters0">
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+          </dateAdjustments>
+        </paymentDate>
+      </payment>
+    </bulletPayment>
+  </trade>

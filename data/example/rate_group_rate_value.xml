@@ -1,0 +1,9 @@
+<data table="rate_group_rate_value" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="rgr_id"/>
+    <column offset="1" tableColumn="rgr_rgp_id"/>
+    <column offset="2" tableColumn="rgr_rat_id"/>
+    <column offset="3" tableColumn="rgr_rav_id"/>
+  </columns>
+</data>
+

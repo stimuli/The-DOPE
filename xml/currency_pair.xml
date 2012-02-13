@@ -1,0 +1,60 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="currency_pair">
+  <column name="cyp_code"
+          description="The unique code for this currency pair."
+          type="CHAR"
+          size="7"
+          primaryKey="true"
+          required="true"/>
+  <column name="cyp_ccy_code_1"
+          description="The first currency in the currency pair."
+          type="CHAR"
+          size="3"
+          required="true"/>
+  <column name="cyp_ccy_code_2"
+          description="The second currency in the currency pair."
+          type="CHAR"
+          size="3"
+          required="true"/>
+  <column name="cyp_quote_convention"
+          description="The default quote convention: 1/2 or 2/1"
+          type="CHAR"
+          size="3"
+          required="true"/>
+  <column name="cyp_spot_days"
+          description="The default number of business days used for spot."
+          type="INTEGER"
+          required="false"/>
+  <column name="cyp_decimal_places"
+          description="The default number of decimal places in the spot rate (pips)."
+          type="INTEGER"
+          required="false"/>
+
+  <foreign-key foreignTable="currency">
+    <reference local="cyp_ccy_code_1" foreign="ccy_code"/>
+  </foreign-key>
+
+  <foreign-key foreignTable="currency">
+    <reference local="cyp_ccy_code_2" foreign="ccy_code"/>
+  </foreign-key>
+
+  <unique name="xcyp_ccy_code_1_ccy_code_2">
+    <unique-column name="cyp_ccy_code_1"/>
+    <unique-column name="cyp_ccy_code_2"/>
+  </unique>
+
+</table>

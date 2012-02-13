@@ -1,0 +1,8 @@
+<data table="trade_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="tty_code"/>
+    <column offset="1" tableColumn="tty_desc"/>
+    <column offset="2" tableColumn="tty_prd_code"/>
+  </columns>
+</data>
+

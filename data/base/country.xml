@@ -1,0 +1,9 @@
+<data table="country" fieldDelimiter="\t">
+  <columns>
+    <column offset="0" tableColumn="cnt_code"/>
+    <column offset="1" tableColumn="cnt_name"/>
+    <column offset="2" tableColumn="cnt_ccy_code"/>
+    <column offset="3" tableColumn="cnt_srg_code"/>
+  </columns>
+</data>
+

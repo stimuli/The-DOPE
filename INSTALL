@@ -1,0 +1,14 @@
+Currently I haven't got a completely automatic way of installing the
+schemas into the database of choice. The basic idea is to generate as
+generic SQL as I can from the XML DDL in the XML directory. The SQL is
+generated to the sql directory.
+
+I've got a quick-and-dirty python script in the bin directory that
+will regenerate the SQL from the XML. I've only tested the generated
+SQL with the MySQL and Sqlite3 databases so far. Currently the SQL
+output works with Sqlite, but if you change the "autoincrement"
+statement near the top of the python script, it will generate output
+for MySQL.
+
+There are some shell scripts in the bin directory for rebuilding the
+Sqlite database or MySQL database from the SQL statements.

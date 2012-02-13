@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <trade>
+    <tradeHeader>
+      <partyTradeIdentifier>
+        <partyReference href="party1" />
+        <tradeId tradeIdScheme="http://stimuli.org/spec/trade-id-scheme">TR00000127</tradeId>
+      </partyTradeIdentifier>
+      <tradeDate id="tradeDate">2005-07-31Z</tradeDate>
+    </tradeHeader>
+    <swap>
+      <productType>swap</productType>
+      <swapStream id="swapStream_0_0">
+        <payerPartyReference href="party1" />
+        <receiverPartyReference href="party2" />
+        <calculationPeriodDates id="calculationPeriodDates_0_0">
+          <relativeEffectiveDate id="effectiveDate_0_0">
+            <periodMultiplier>2</periodMultiplier>
+            <period>D</period>
+            <dayType>Business</dayType>
+            <businessDayConvention>NONE</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="tradeDate" />
+            <relativeDateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>GBLO</businessCenter>
+                <businessCenter>USNY</businessCenter>
+              </businessCenters>
+            </relativeDateAdjustments>
+          </relativeEffectiveDate>
+          <relativeTerminationDate id="terminationDate_0_0">
+            <periodMultiplier>2</periodMultiplier>
+            <period>Y</period>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="effectiveDate_0_0" />
+          </relativeTerminationDate>
+          <calculationPeriodDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+          </calculationPeriodDatesAdjustments>
+          <calculationPeriodFrequency>
+            <periodMultiplier>6</periodMultiplier>
+            <period>M</period>
+            <rollConvention>NONE</rollConvention>
+          </calculationPeriodFrequency>
+        </calculationPeriodDates>
+        <paymentDates>
+          <calculationPeriodDatesReference href="calculationPeriodDates_0_0" />
+          <paymentFrequency>
+            <periodMultiplier>6</periodMultiplier>
+            <period>M</period>
+          </paymentFrequency>
+          <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+          <paymentDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+          </paymentDatesAdjustments>
+        </paymentDates>
+        <calculationPeriodAmount>
+          <calculation>
+            <notionalSchedule id="notionalSchedule_0_0">
+              <notionalStepSchedule>
+                <initialValue>100000000</initialValue>
+                <currency>USD</currency>
+              </notionalStepSchedule>
+            </notionalSchedule>
+            <fixedRateSchedule>
+              <initialValue>0.0003</initialValue>
+            </fixedRateSchedule>
+            <dayCountFraction>30/360</dayCountFraction>
+          </calculation>
+        </calculationPeriodAmount>
+        <principalExchanges>
+          <initialExchange>false</initialExchange>
+          <finalExchange>false</finalExchange>
+          <intermediateExchange>false</intermediateExchange>
+        </principalExchanges>
+      </swapStream>
+      <swapStream id="swapStream_0_1">
+        <payerPartyReference href="party2" />
+        <receiverPartyReference href="party1" />
+        <calculationPeriodDates id="calculationPeriodDates_0_1">
+          <relativeEffectiveDate id="effectiveDate_0_1">
+            <periodMultiplier>2</periodMultiplier>
+            <period>D</period>
+            <dayType>Business</dayType>
+            <businessDayConvention>NONE</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="tradeDate" />
+            <relativeDateAdjustments>
+              <businessDayConvention>MODFOLLOWING</businessDayConvention>
+              <businessCenters>
+                <businessCenter>GBLO</businessCenter>
+                <businessCenter>USNY</businessCenter>
+              </businessCenters>
+            </relativeDateAdjustments>
+          </relativeEffectiveDate>
+          <relativeTerminationDate id="terminationDate_0_1">
+            <periodMultiplier>2</periodMultiplier>
+            <period>Y</period>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="effectiveDate_0_1" />
+          </relativeTerminationDate>
+          <calculationPeriodDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+          </calculationPeriodDatesAdjustments>
+          <calculationPeriodFrequency>
+            <periodMultiplier>3</periodMultiplier>
+            <period>M</period>
+            <rollConvention>NONE</rollConvention>
+          </calculationPeriodFrequency>
+        </calculationPeriodDates>
+        <paymentDates>
+          <calculationPeriodDatesReference href="calculationPeriodDates_0_1" />
+          <paymentFrequency>
+            <periodMultiplier>6</periodMultiplier>
+            <period>M</period>
+          </paymentFrequency>
+          <payRelativeTo>CalculationPeriodEndDate</payRelativeTo>
+          <paymentDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+              <businessCenter>USNY</businessCenter>
+            </businessCenters>
+          </paymentDatesAdjustments>
+        </paymentDates>
+        <resetDates id="resetDates_0_1">
+          <calculationPeriodDatesReference href="calculationPeriodDates_0_1" />
+          <resetRelativeTo>CalculationPeriodStartDate</resetRelativeTo>
+          <fixingDates>
+            <periodMultiplier>-2</periodMultiplier>
+            <period>D</period>
+            <dayType>Business</dayType>
+            <businessDayConvention>NONE</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+            </businessCenters>
+            <dateRelativeTo href="resetDates_0_1" />
+          </fixingDates>
+          <resetFrequency>
+            <periodMultiplier>1</periodMultiplier>
+            <period>M</period>
+          </resetFrequency>
+          <resetDatesAdjustments>
+            <businessDayConvention>MODFOLLOWING</businessDayConvention>
+            <businessCenters>
+              <businessCenter>GBLO</businessCenter>
+            </businessCenters>
+          </resetDatesAdjustments>
+        </resetDates>
+        <calculationPeriodAmount>
+          <calculation>
+            <notionalSchedule id="notionalSchedule_0_1">
+              <notionalStepSchedule>
+                <initialValue>100000000</initialValue>
+                <currency>USD</currency>
+              </notionalStepSchedule>
+            </notionalSchedule>
+            <floatingRateCalculation>
+              <floatingRateIndex>USD-LIBOR-BBA</floatingRateIndex>
+              <indexTenor>
+                <periodMultiplier>6</periodMultiplier>
+                <period>M</period>
+              </indexTenor>
+            </floatingRateCalculation>
+            <dayCountFraction>ACT/360</dayCountFraction>
+            <compoundingMethod>Straight</compoundingMethod>
+          </calculation>
+        </calculationPeriodAmount>
+        <principalExchanges>
+          <initialExchange>false</initialExchange>
+          <finalExchange>false</finalExchange>
+          <intermediateExchange>false</intermediateExchange>
+        </principalExchanges>
+      </swapStream>
+    </swap>
+  </trade>

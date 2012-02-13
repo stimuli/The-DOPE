@@ -1,0 +1,7 @@
+<data table="date_roll_type" fieldDelimiter="\t" fieldQuoted="false">
+  <columns>
+    <column offset="0" tableColumn="dtr_code"/>
+    <column offset="1" tableColumn="dtr_desc"/>
+  </columns>
+</data>
+

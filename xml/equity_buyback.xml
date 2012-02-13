@@ -1,0 +1,54 @@
+<!--
+  Copyright 2009 Brett Hutley <brett@hutley.net>
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<table name="equity_buyback">
+  <column name="ebb_id"
+          description="The unique row ID for this equity buyback."
+          type="INTEGER"
+          primaryKey="true"
+          autoIncrement="true"
+          required="true"/>
+  <column name="ebb_eqy_code"
+          description="The equity code that this buy back is on."
+          type="VARCHAR"
+          size="30"
+          required="true"/>
+  <column name="ebb_announce_date"
+          description="The announcement date of the buyback."
+          type="DATE"
+          required="false"/>
+  <column name="ebb_num_shares"
+          description="The number of shares being repurchased."
+          type="INTEGER"
+          required="true"/>
+  <column name="ebb_price_per_share"
+          description="The price per share of the buy-back."
+          type="NUMERIC"
+          size="12,4"
+          required="true"/>
+  <column name="ebb_buyback_date"
+          description="The date of the buy-back."
+          type="DATE"
+          required="true"/>
+
+  <foreign-key foreignTable="equity">
+    <reference local="ebb_eqy_code" foreign="eqy_code"/>
+  </foreign-key>
+
+  <index name="xebb_buyback_date">
+    <index-column name="ebb_buyback_date"/>
+  </index>
+
+</table>

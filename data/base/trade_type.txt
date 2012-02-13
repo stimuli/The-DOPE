@@ -1,0 +1,4 @@
+FX/FWD	FX Forward	FX
+FX/EUOP	FX European Call/Put	FX
+EQ	Equity Buy/Sell	EQ
+EQ/AMOP	Equity American Option	EQ
